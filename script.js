@@ -11,11 +11,20 @@ const playPauseBtn = document.getElementById('playPauseBtn');
 const nextBtn = document.getElementById('nextBtn');
 
 // Fungsi untuk memutar musik
+// Fungsi untuk memutar musik setelah interaksi pengguna
 function playMusic() {
-    audio.src = playlist[currentTrackIndex];
-    audio.play();
-    playPauseBtn.innerHTML = '<i class="fas fa-pause"></i>';
+    const audio = document.getElementById('backgroundMusic');
+    if (audio.paused) {
+        audio.play();
+        playPauseBtn.innerHTML = '<i class="fas fa-pause"></i>';
+    } else {
+        audio.pause();
+        playPauseBtn.innerHTML = '<i class="fas fa-play"></i>';
+    }
 }
+
+// Event listener untuk tombol play/pause
+document.getElementById('playPauseBtn').addEventListener('click', playMusic);
 
 // Fungsi untuk memutar musik berikutnya
 function nextMusic() {
