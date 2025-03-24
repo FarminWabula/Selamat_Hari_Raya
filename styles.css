@@ -165,6 +165,13 @@ audio {
     display: none;
 }
 
+.music-notice {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #fff;
+}
+
 /* Style untuk tombol kontrol musik */
 .music-controls {
     position: fixed;
