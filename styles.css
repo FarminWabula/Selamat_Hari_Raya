@@ -276,7 +276,7 @@ audio {
     margin: 20px 0;
 }
 #enableMusic {
-    padding: 15px 30px;
+    padding: 5px 5px;
     font-size: 1.2rem;
-    background: linear-gradient(45deg, #ff9f43, #e74c3c);
+    background: linear-gradient(#48dbfb, 0 0 20px #48dbfb, 0 0 30px #48dbfb;);
 }
