@@ -6,16 +6,32 @@ const playlist = [
 ];
 
 let currentTrackIndex = 0;
+// script.js yang dimodifikasi
 const audio = document.getElementById('backgroundMusic');
-const playPauseBtn = document.getElementById('playPauseBtn');
-const nextBtn = document.getElementById('nextBtn');
+let isMusicEnabled = false;
 
-// Fungsi untuk memutar musik
-// Fungsi untuk memutar musik setelah interaksi pengguna
+function enableMusic() {
+    isMusicEnabled = true;
+    localStorage.setItem('musicEnabled', 'true');
+    playMusic();
+}
+
+// Cek preferensi sebelumnya
+if (localStorage.getItem('musicEnabled') === 'true') {
+    enableMusic();
+}
+
+// Event listener untuk tombol besar
+document.getElementById('enableMusic').addEventListener('click', enableMusic);
+
+// Fungsi playMusic() tetap sama, tapi dengan error handling
 function playMusic() {
+    if (!isMusicEnabled) return;
+    
     audio.src = playlist[currentTrackIndex];
-    audio.play();
-    playPauseBtn.innerHTML = '<i class="fas fa-pause"></i>';
+    audio.play().catch(e => {
+        console.warn("Autoplay prevented, waiting for interaction");
+    });
 }
 
 // Fungsi untuk memutar musik berikutnya
