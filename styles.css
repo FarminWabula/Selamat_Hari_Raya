@@ -165,13 +165,6 @@ audio {
     display: none;
 }
 
-.music-notice {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 1rem;
-    color: #fff;
-}
-
 /* Style untuk tombol kontrol musik */
 .music-controls {
     position: fixed;
@@ -195,6 +188,10 @@ audio {
     display: flex;
     align-items: center;
     justify-content: center;
+    -webkit-transition: background-color 0.3s ease, transform 0.3s ease;
+    -moz-transition: background-color 0.3s ease, transform 0.3s ease;
+    -ms-transition: background-color 0.3s ease, transform 0.3s ease;
+    -o-transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .music-controls button:hover {
@@ -209,14 +206,18 @@ audio {
     100% { transform: translateY(0); }
 }
 
+/* Tambahkan will-change untuk elemen yang dianimasi */
 .letter-text {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    text-align: center;
-    color: #fff;
-    animation: float 3s ease-in-out infinite;
+    will-change: transform;
 }
 
+.letter-container {
+    background: rgba(255, 255, 255, 0.3); /* Fallback */
+    @supports (backdrop-filter: blur(10px)) {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+    }
+}
 /* Style untuk daftar teman */
 .friend-list {
     margin-top: 40px;
@@ -269,4 +270,13 @@ audio {
     button {
         width: 100%;
     }
+}
+
+.music-permission {
+    margin: 20px 0;
+}
+#enableMusic {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background: linear-gradient(45deg, #ff9f43, #e74c3c);
 }
