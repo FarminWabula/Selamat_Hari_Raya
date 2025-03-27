@@ -184,7 +184,7 @@ function generateLetter() {
         Dengan penuh kerendahan hati, saya mengucapkan:<br>
         <strong>Selamat Hari Raya Idul Fitri 1446 H</strong>.<br><br>
         Mohon maaf lahir dan batin atas segala kesalahan dan khilaf yang telah saya perbuat, baik yang disengaja maupun tidak disengaja. 🙏🏻🙏🏻🙏🏻<br><br>
-        Ada Buat kalian.<br><br>
+        Ada Pantun Buat kalian.<br><br>
         ${randomPantun}<br><br>
         Hormat saya,<br>
         Farmin Wabula/Fahmi 😜
