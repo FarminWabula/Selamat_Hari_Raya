@@ -186,7 +186,7 @@ function generateLetter() {
         Mohon maaf lahir dan batin atas segala kesalahan dan khilaf yang telah saya perbuat, baik yang disengaja maupun tidak disengaja.<br><br>
         ${randomPantun}<br><br>
         Hormat saya,<br>
-        Farmin Wabula/Fahmi (Yang selalu Menunggu THR dari kalian. 😜)
+        Farmin Wabula/Fahmi 😜
     `;
 
     letterText.innerHTML = letter;
