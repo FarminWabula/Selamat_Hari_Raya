@@ -1,5 +1,6 @@
 // Daftar musik
 const playlist = [
+    "music.mp3",
     "music1.mp3",
     "music2.mp3",
     "music3.mp3"
