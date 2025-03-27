@@ -187,7 +187,7 @@ function generateLetter() {
         Ada Pantun Ni Buat Kamu.<br><br>
         ${randomPantun}<br><br>
         Hormat saya,<br>
-        Farmin/Fahmi 🙏🏻
+        Farmin/Fahmi 😜
     `;
 
     letterText.innerHTML = letter;
