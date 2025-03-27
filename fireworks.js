@@ -145,14 +145,14 @@ function generateLetter() {
     
     // Daftar pantun
     const pantunList = [
-        `Pergi ke warung beli ketan,<br>
-        Pulangnya bawa sate padang.<br>
-        Lebaran ini maaf ku ucapkan,<br>
-        Tapi THR kapan cair di rekening abang?! 🤨`,
+        `Ramadhan pergi Syawal menjelang,<br>
+        Gema takbir menggema syahdu.<br>
+        Selamat Lebaran dengan senang,<br>
+        Mohon maaf lahir dan batin selalu. 🫶🏻`,
 
-        `Jalan-jalan ke kota Blitar,<br>
-        Jangan lupa beli buah mangga.<br>
-        Selamat Hari Raya Idul Fitri,<br>
+        `Takbir berkumandang merdu sekali,<br>
+        Menyejukkan hati penuh harapan.<br>
+        Selamat Idul Fitri untukmu dan keluarga,<br>
         Mohon maaf lahir dan batin ya! 😊`,
 
         `Naik kereta ke Surabaya,<br>
@@ -170,10 +170,10 @@ function generateLetter() {
         Mohon maaf lahir dan batin,<br>
         Semoga rezeki lancar dan berkah. 🍀`,
 
-        `Ketupat sayur enak rasanya,<br>
-        Dimakan hangat dengan kerupuk.<br>
-        Katanya mau insaf tahun lalu,<br>
-        Eh, tahun ini masih suka ngeprank grup! 😂`,
+        `Bulan Ramadhan sudah berlalu,<br>
+        Hari kemenangan datang menyapa.<br>
+        Jika khilaf pernah mengganggu,<br>
+        Mohon maaf dengan sepenuh jiwa. 🤗`,
     ];
 
     // Pilih pantun secara acak
